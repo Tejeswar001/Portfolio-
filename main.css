@@ -66,7 +66,7 @@ li a:hover:not(.active) {
     background: #fbf4f4;
     padding: 20px;
     box-shadow: none;
-    height: 85vh;
+    height: 90vh;
     min-height: calc(100vh - 2.5em);
 }
 
@@ -96,6 +96,7 @@ li a:hover:not(.active) {
   padding-left: 20px;
   padding-top: 20px ;
   min-height: calc(100vh - 2.5em);
+  height: 100vh;
 }
 h2{
   padding: 20px 0px 20px;
@@ -116,11 +117,10 @@ h2{
 }
 .intro-left{
     flex: 1;
-    padding-left: 200px;
+    padding-left: 100px;
     padding-right: 100px;
     font-size: large;
-    outline-color: #000011;
-    outline-style: groove;
+
 }
 .intro-right{
     flex: 1;
@@ -212,7 +212,7 @@ h2{
 .project img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .project h3 {
@@ -317,3 +317,35 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+@media only screen and (max-width: 600px){
+    .navbar{
+        height:auto
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .welcome-left{
+        order:1;
+        padding: 2.25rem 2rem 1rem 2rem;
+    }
+    .tan{
+        padding-left: 5rem ;
+    }
+    .pic1{
+        max-width: 20rem;
+    }
+    .intro{
+        flex-direction: column;
+        max-height: 200vh;
+        min-height: 160vh;
+    }
+    .projects-container{
+        flex-direction: column;
+    }
+    .project{
+        width:auto
+    }
+    .contact-container{
+        width:100%
+    }
+}
