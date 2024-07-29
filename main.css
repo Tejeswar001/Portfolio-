@@ -369,7 +369,7 @@ button[type="submit"]:hover {
         top: 60px;
         right: 20px;
         width:150px;
-        background-color: #000000;
+        background-color: #000011;
     }
     .navdiv.active{
         display: flex;
