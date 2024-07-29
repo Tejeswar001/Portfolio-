@@ -10,24 +10,23 @@ body {
     background-color: #f4f4f4;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     padding-left: 15px; 
     padding-right: 15px;
     background-color:#000011;
     margin-top: 0;
     height: 60px;
-}
-.navbar{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
 .menu-toggle {
     display: none;
     cursor: pointer;
 }
+
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
@@ -36,7 +35,7 @@ body {
     transition: 0.3s;
 }
 
-.logo a{
+.logo a {
     padding-top: 10px;
     font-size: 35px; 
     font-weight: 600;
@@ -44,15 +43,17 @@ body {
     text-align: left;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-li{
+
+li {
     padding-top: 15px;
     list-style: none; 
     display: inline-block;
     text-align: left;
 }
-li a{
+
+li a {
     border-style: hidden;
-    font-size:18px; 
+    font-size: 18px; 
     margin-left: 25px;
     margin-right: 25px;
     color: #fff;
@@ -64,11 +65,12 @@ li a:hover:not(.active) {
     border-top: 20px;
     text-align: center;
 }
-  
+
 .active {
     background-color: #e8e9e8;
     border-style: hidden;
 }
+
 .welcome {
     display: flex;
     align-items: center;
@@ -98,25 +100,29 @@ li a:hover:not(.active) {
     text-align: left;
     padding-left: 100px;
 }
-.w{
+
+.w {
     text-align: left;
 }
-.intro{
-  background: #fff;
-  border-style: hidden;
-  padding-left: 20px;
-  padding-top: 20px ;
-  min-height: calc(100vh - 2.5em);
-  height: 100vh;
-}
-h2{
-  padding: 20px 0px 20px;
-}
-.pass-w{
-  padding: 10px 0px 10px;
+
+.intro {
+    background: #fff;
+    border-style: hidden;
+    padding-left: 20px;
+    padding-top: 20px;
+    min-height: calc(100vh - 2.5em);
+    height: 100vh;
 }
 
-.intro{
+h2 {
+    padding: 20px 0;
+}
+
+.pass-w {
+    padding: 10px 0;
+}
+
+.intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,18 +132,18 @@ h2{
     box-shadow: none;
     height: 85vh;
 }
-.intro-left{
+
+.intro-left {
     flex: 1;
     padding-left: 100px;
     padding-right: 100px;
     font-size: large;
+}
 
-}
-.intro-right{
+.intro-right {
     flex: 1;
-    padding-right: 500px;
-    padding-left: 200px;
 }
+
 .button {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -167,10 +173,12 @@ h2{
     text-transform: uppercase;
     white-space: nowrap;
 }
-.learn_more{
+
+.learn_more {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 .intro-skills-container {
     display: flex;
     justify-content: space-between;
@@ -199,16 +207,16 @@ h2{
     margin-bottom: 10px;
 }
 
-
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#projects{
+#projects {
     min-height: calc(100vh - 2.5em);
 }
+
 .project {
     background: #f9f9f9;
     border: 1px solid #ddd;
@@ -238,15 +246,17 @@ h2{
 .project a:hover {
     text-decoration: underline;
 }
-#pro{
+
+#pro {
     text-align: center;
     font-size: 30px;
 }
 
-.github-link{
+.github-link {
     text-align: center;
 }
-#pro2{
+
+#pro2 {
     padding: 20px;
 }
 
@@ -328,54 +338,58 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-@media only screen and (max-width: 768px){
-    .navbar{
-        height:auto
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
     }
-    .welcome{
+    .welcome {
         flex-direction: column;
     }
-    .welcome-left{
-        order:1;
+    .welcome-left {
+        order: 1;
         padding: 2.25rem 2rem 1rem 2rem;
     }
-    .tan{
-        padding-left: 5rem ;
+    .tan {
+        padding-left: 5rem;
     }
-    .pic1{
+    .pic1 {
         max-width: 20rem;
     }
-    .intro{
+    .intro {
         flex-direction: column;
         max-height: 200vh;
         min-height: 160vh;
     }
-    .projects-container{
+    .intro-right{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects-container {
         flex-direction: column;
     }
-    .project{
-        width:auto
+    .project {
+        width: auto;
     }
-    button[type='submit']{
-        width:9rem;
+    button[type='submit'] {
+        width: 9rem;
     }
-    .menu-toggle{
+    .menu-toggle {
         display: block;
     }
-    .navdiv{
+    .navdiv {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
         right: 20px;
-        width:150px;
+        width: 150px;
         background-color: #000011;
     }
-    .navdiv.active{
+    .navdiv.active {
         display: flex;
     }
     .navdiv li {
         margin: 10px 0;
     }
-
 }
