@@ -350,7 +350,10 @@ button[type="submit"]:hover {
         padding: 2.25rem 2rem 1rem 2rem;
     }
     .tan {
-        padding-left: 5rem;
+        padding-left: 9rem;
+        padding-right: 9rem;
+        justify-content: center;
+        align-items: center;
     }
     .pic1 {
         max-width: 20rem;
