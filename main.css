@@ -82,6 +82,45 @@ li a:hover:not(.active) {
     height: 90vh;
     min-height: calc(100vh - 2.5em);
 }
+.con-icons{
+    display: flex;
+    gap: 20px;
+}
+.con-icons a{
+    justify-content: center;
+    align-items: center;
+}
+.social-media-container{
+    padding-top: 30px;
+}
+.social-media-container a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 50%;
+    border: 2px solid #e2dede;
+    position: relative;
+    box-shadow: 0 0 0 #8000ff inset;
+    transition-duration: .3s;
+}
+.social-media-container a:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.social-media-container svg {
+    width: 24px; /* Adjust size of icons */
+    height: 24px;
+    fill: #333; /* Icon color */
+}
+
+.social-media-container a:hover svg {
+    fill: #090909; /* Change icon color on hover */
+}
 
 .tan {
     flex: 1;
