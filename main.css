@@ -435,3 +435,10 @@ button[type="submit"]:hover {
         margin: 10px 0;
     }
 }
+
+.inner{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    display: flex;
+}
