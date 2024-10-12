@@ -422,6 +422,17 @@ button[type="submit"]:hover {
         justify-content: center;
     }
 
+    .skill_skill{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .skill{
+        flex: auto;
+    }
+
     .projects-container {
         flex-direction: column;
     }
