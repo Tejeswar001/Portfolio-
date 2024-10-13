@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body class="main-body">
     <nav class="navbar">
@@ -131,6 +134,24 @@
                 <p>Dices Simulator using Python</p>
                 <a href="https://github.com/Tejeswar001/dices" target="_blank">View Project</a>
             </div>
+            <div class="project">
+                <img src="queue.png" alt="Project 3">
+                <h3>Restaurant Booking Queue</h3>
+                <p>Implemented Queue data structure in python with GUI using Tkinter. To understand the operations of queue in real applications</p>
+                <a href="https://github.com/Tejeswar001/Restaurant-Booking-using-Queue" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <img src="Inventory_web.png" alt="Project 4">
+                <h3>Inventory Monitor</h3>
+                <p>Built a web application using next.js and google firebase,to monitor and manage the items in a store</p>
+                <a href="https://github.com/Tejeswar001/InventoryMonitor" target="_blank">View project</a>
+            </div>
+            <div class="project">
+                <img id="spic" src="schema.png" alt="Project 5">
+                <h3>Star Schema of Cab booking System</h3>
+                <p>Created a star schema for cab booking system database,to make complex quries easy and understandable in less time.</p>
+                <a href="https://github.com/Tejeswar001/Cab-booking-system-Star-Schema" target="_blank">View project</a>
+            </div>
         </div>
         <div class="github-link"><p id="pro2">For more Projects and a detailed view</p></div>
         <div class="github-link"><a class="button" href="https://github.com/Tejeswar001" download>Github</a></div>
@@ -144,5 +165,38 @@
             </div></p>
         </div>
     </footer>
+    <script>
+        $(document).ready(function() {
+            function initializeSlick() {
+                if ($(window).width() <= 768) { // Mobile screen width
+                    if (!$('.projects-container').hasClass('slick-initialized')) { // Prevent multiple initializations
+                        $('.projects-container').slick({
+                            slidesToShow: 1, // Show one project per slide on mobile
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true, // Show navigation dots
+                            arrows: false, // Enable next/prev arrows
+                            autoplay: true,
+                            autoplaySpeed: 3000
+                        });
+                    }
+                } else {
+                    if ($('.projects-conatiner').hasClass('slick-initialized')) {
+                        $('.projects-container').slick('unslick'); // Destroy slick if screen is larger than mobile
+                    }
+                }
+            }
+        
+            // Initialize on load
+            initializeSlick();
+        
+            // Reinitialize on window resize (to handle resize events)
+            $(window).resize(function() {
+                initializeSlick();
+            });
+        });
+        </script>
+        
+        
 </body>
 </html>

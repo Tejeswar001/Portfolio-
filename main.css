@@ -301,6 +301,10 @@ h2 {
     text-decoration: underline;
 }
 
+#spic{
+    height: inherit;
+}
+
 #pro {
     text-align: center;
     font-size: 30px;
@@ -334,62 +338,6 @@ h2 {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
-}
-
-form {
-    flex: 1;
-    min-width: 280px;
-}
-
-.form-group {
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.form-group.half {
-    width: calc(50% - 0.5rem);
-    display: inline-block;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background: #f9f9f9;
-    resize: vertical;
-}
-
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-textarea::placeholder {
-    color: #aaa;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-button[type="submit"] {
-    display: inline-block;
-    width: 20%;
-    padding: 0.75rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 1rem;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
 }
 
 @media only screen and (max-width: 768px) {
@@ -436,10 +384,106 @@ button[type="submit"]:hover {
 
     .projects-container {
         flex-direction: column;
+        height: auto;
     }
     .project {
         width: auto;
     }
+    /* Styling the Previous Arrow */
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        left: 10px; /* Adjust position */
+        z-index: 1; /* Bring the arrow above the slider */
+        background-color: #ffffff; /* Background color */
+        color: rgb(0, 0, 0); /* Arrow color */
+        border-radius: 50%; /* Round shape */
+        transform: translateY(-50%); /* Adjust the vertical alignment */
+        width: 40px; 
+        height: 40px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* Custom Icon for Previous Arrow */
+    .slick-prev:before {
+        content: '\2190'; /* Unicode for left arrow */
+        font-size: 20px;
+    }
+
+    /* Styling the Next Arrow */
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Adjust position */
+        transform: translateY(-50%);
+        z-index: 1;
+        background-color: #fffbfb;
+        color: rgb(0, 0, 0);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Custom Icon for Next Arrow */
+    .slick-next:before {
+        content: '\2192'; /* Unicode for right arrow */
+        font-size: 20px;
+    }
+
+    /* Hover Effect for Arrows */
+    .slick-prev:hover, .slick-next:hover {
+        background-color: #ada9a9; /* Darker background on hover */
+        cursor: pointer;
+    }
+
+    /* Styling the Dot Navigation */
+    .slick-dots {
+        position: absolute;
+        bottom: -30px; /* Adjust the position of the dots */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Individual Dots */
+    .slick-dots li {
+        margin: 0 5px; /* Spacing between dots */
+    }
+
+    /* Style for Dot Buttons */
+    .slick-dots li button {
+        font-size: 0; /* Remove text */
+        width: 12px;
+        height: 12px;
+        border-radius: 50%; /* Make dots round */
+        background-color: #ccc; /* Default dot color */
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Active Dot */
+    .slick-dots li.slick-active button {
+        background-color: #333; /* Active dot color */
+    }
+
+    /* Hover Effect for Dots */
+    .slick-dots li button:hover {
+        background-color: #666; /* Change color on hover */
+        cursor: pointer;
+    }
+
+    .github-link{
+        padding-top: 20px;
+    }
+
     button[type='submit'] {
         width: 9rem;
     }
