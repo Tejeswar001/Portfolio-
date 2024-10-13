@@ -21,7 +21,7 @@
             <li><a href="#welcome">Home</a></li>
             <li><a href="#intro">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <script src="script.js"></script>
     </nav>
@@ -113,6 +113,7 @@
             </div>
         </div>
     </div>
+    <hr>
     <div id="projects" class="projects">
         <h2 id="pro">My Projects</h2>
         <div class="projects-container">
@@ -158,13 +159,31 @@
     </div>
     
     <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-            <p><div>
-                <p>Made with love</p>
-            </div></p>
+    <footer>
+        <div class="footer-contact-form" id="contact">
+            <h2>Collaborate with Me</h2>
+            <form id="contactForm" action="https://formspree.io/f/xqakkevb" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
     </footer>
+    
     <script>
         $(document).ready(function() {
             function initializeSlick() {

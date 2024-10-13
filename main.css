@@ -146,7 +146,7 @@ li a:hover:not(.active) {
 }
 
 .intro {
-    background: #fff;
+    background: #ffffff;
     border-style: hidden;
     padding-left: 20px;
     padding-top: 20px;
@@ -167,7 +167,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
-    background: #ffffff;
+    background: #fffdfd;
     padding: 20px;
     box-shadow: none;
     height: 85vh;
@@ -269,10 +269,11 @@ h2 {
 
 #projects {
     min-height: calc(100vh - 2.5em);
+    background-color: #ffffff;
 }
 
 .project {
-    background: #f9f9f9;
+    background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -333,12 +334,86 @@ h2 {
     text-align: center;
 }
 
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
+/* General Styles */
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
 }
+
+.footer-contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4ebeb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #010101;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #444343;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #e7d8d8;
+    color: #040404;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6b6b;
+    background-color: #ffd9d9;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Button Styles */
+.submit-btn {
+    background-color: #f4b4b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #e85a5a;
+}
+
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -485,7 +560,7 @@ h2 {
     }
 
     button[type='submit'] {
-        width: 9rem;
+        width: 12rem;
     }
     .menu-toggle {
         display: block;
