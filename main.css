@@ -414,8 +414,9 @@ button[type="submit"]:hover {
     }
     .intro {
         flex-direction: column;
-        max-height: 200vh;
-        min-height: 160vh;
+        /*max-height: 200vh;
+        min-height: 160vh;*/
+        height: auto;
     }
     .intro-right{
         align-items: center;
